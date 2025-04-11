@@ -435,7 +435,7 @@ def cooler_to_bedgraph(
         if vpstart <=0:
             vpstart = 1
         # TODO: IF VPEND > CHR SIZE, SET TO CHR SIZE (not sure if this is needed as well?)
-            region_to_limit = f"{viewpoint_coords[0]}:{vpstart}-{vpend}"
+        region_to_limit = f"{viewpoint_coords[0]}:{vpstart}-{vpend}"
     else:
         region_to_limit = None
 
